@@ -1,5 +1,4 @@
-title = "Moja"
 baseurl = "http://moja.market/"
 languageCode = "en-us"
-
 pluralizelisttitles = "false"
+title = "Moja"
