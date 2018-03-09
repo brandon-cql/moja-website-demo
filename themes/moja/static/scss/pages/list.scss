@@ -1,0 +1,43 @@
+#blog{
+	background: #D3EFFE;
+	background-image: url("/img/world-map2.svg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+
+	main{
+		max-width: 1300px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	aside{
+		display: none;
+	}
+} 
+@media (min-width:640px){
+#blog{
+	main{
+		padding-left: 300px;
+		z-index: -1;
+	}
+	aside{
+		display: block;
+		float: left;
+		position: fixed;
+		top: 0;
+		padding: 120px $space-f 400px;
+		box-sizing: border-box;
+		overflow-y: scroll;
+		height: 100vh;
+		@include card-layer2;
+
+		ul{
+			padding-left: 0;
+		}
+		li{
+			list-style: none;
+		}
+	}
+} 
+}

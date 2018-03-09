@@ -1,0 +1,136 @@
+#home{
+  background-image: url("/img/world-map.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: $yellow;
+
+  #read-more{
+    position: absolute;
+    top: -72px;
+  }
+  .home-section{
+    position: relative;
+    margin-bottom: $space-d;
+    @include card-layer2;
+  }
+  .home-section:after{
+    @include clearfix;
+  }
+  .color-content{
+      padding: $space-d $site-padding $space-f;
+      color:white;
+      box-sizing: border-box;
+
+      &.connect{
+          background-color: $blue;
+          background-image: url("/img/connect-splash.svg");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: left bottom;
+          background-size: contain;
+        }
+      &.marketplace{
+          background-color: $green;
+          background-image: url("/img/marketplace-splash.svg");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: left bottom;
+          background-size: contain;
+        }
+      &.university{
+          background-color: $red;
+          background-image: url("/img/university-splash.svg");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: left bottom;
+          background-size: contain;
+        }
+  }
+  #home-hero{
+    color: white;
+    height: 100vh;
+    text-align: center;
+    padding-left: $site-padding;
+    padding-right: $site-padding;
+
+    .content{
+      width: 640px;
+      display: inline-block;
+      margin-top:24vh;
+      max-width: 100%;
+
+      h1{
+        font-size:40px;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-bottom: 16px;
+      }
+      p{ font-size:17px; }
+      .btn{ margin-top:16px; }
+      .btn:last-of-type{ margin-right:0; }
+    }
+  }
+  #home-belowfold{
+    background: #E6E6E6;
+    padding-bottom: $space-f;
+    position: relative;
+  }
+  #home-connect{
+    background-color:$blue;
+  }
+  #home-trade{
+    background-color:$green;
+  }
+  #home-learn{
+    background-color:$red;
+  }
+}
+
+@media (min-width:640px){
+#home{
+  #home-hero{
+    .content{
+      margin-top:35vh;
+
+      h1{ font-size: 48px; }
+      p{ font-size:19px; }
+    }   
+  }
+}
+}
+@media (min-width:720px){
+#home{
+  #home-belowfold{
+    padding-bottom: 0;
+  }
+  .home-section{
+    margin-bottom: 0;
+    @include card-layer0;
+
+    img{
+      float:right;
+    }
+    .color-content{
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      width: 50%;
+      height: 100%;
+      padding: 9% $site-padding $space-f;
+    }
+  }
+  .home-section.alt{
+
+    img{
+      float:left;
+    }
+    .color-content{
+      left: initial;
+      right: 0;
+    }
+  }
+}
+}

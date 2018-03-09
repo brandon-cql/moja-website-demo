@@ -1,0 +1,15 @@
+<article class="blog-post animated fadeInUp">
+    <div class="content">
+      <a href="{{ .Permalink }}"><h2 class="animated fadeInUp">{{ .Title }}</h2></a>
+      <div class="post-details">
+        <p class="description animated fadeInUp">{{ .Summary }}</p>
+        <div class="post-li-meta animated fadeInUp">
+          <p>
+              {{ range .Params.categories }}
+                  <span>{{ . }}</span><span class="tag-comma">,</span>
+              {{ end }}
+          </p>
+        </div>
+      </div>
+    </div>
+</article>

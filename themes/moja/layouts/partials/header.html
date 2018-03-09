@@ -1,0 +1,18 @@
+{{ partial "meta.html" . }}
+
+<body>
+    <header id="default" class="animated fadeIn">
+        <div class="content">
+            <a id="brand" href="/">
+                <img src="/img/moja-logo.png" alt="Moja">
+            </a>
+            <nav id="main-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{{ $.Site.BaseURL }}blog">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container site">
