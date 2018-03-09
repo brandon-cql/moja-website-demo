@@ -1,4 +1,4 @@
-baseurl = "http://moja.market/"
+baseurl = "http://moja-website-demo.s3-website-us-east-1.amazonaws.com/"
 languageCode = "en-us"
 pluralizelisttitles = "false"
 title = "Moja"
